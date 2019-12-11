@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 import * as Service from '../service/common';
 
 class main extends PureComponent {
@@ -10,7 +11,9 @@ class main extends PureComponent {
     }
 
     render() {
-        return <div>테스트</div>;
+        return (
+            <Link to="/move">테스트 이동</Link>
+        );
     }
 }
 
